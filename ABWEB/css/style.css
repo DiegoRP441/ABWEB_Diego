@@ -1,0 +1,127 @@
+/* estilo para las tres imagenes principales */
+.image-container {
+    position: relative;
+    text-align: center;
+    background-color:purple; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.image-row .image-container {
+    flex-basis: calc(33.333% - 40px);
+    margin: 10px;
+    padding: 10px; 
+    transition: transform 1s ease, box-shadow 1s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+}
+.image-row .image-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(84, 5, 93, 0.5);
+    box-shadow: 0 10px 40px rgba(84,5,93, 0.9);
+}
+
+.image-row button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.image-row button:hover {
+    background-color: rgba(39, 1, 54, 0.7); 
+
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-row .image-container {
+        margin-bottom: 20px;
+        flex-basis: auto;
+    }
+}
+
+
+.quienes-somos {
+    padding: 20px;
+    background-color: #f5f5f5; 
+    margin-top: 20px; 
+}
+
+.quienes-somos h2 {
+    text-align: center;
+    color: #333; 
+    margin-bottom: 15px; 
+}
+
+.quienes-somos p {
+    color: #666; 
+    line-height: 1.6; 
+    max-width: 800px; 
+    margin: 10px auto; 
+    text-align: justify; 
+}
+
+.site-footer {
+    background-color: #333; 
+    color: white; 
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    gap: 150px; 
+}
+
+.footer-photo {
+    flex: 0 0 auto; 
+}
+
+.footer-photo img {
+    max-width: 500px; 
+    height: auto; 
+}
+
+.footer-links {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+.footer-links a {
+    color: white; 
+    text-decoration: none; 
+    margin-bottom: 10px; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline; 
+}
+
+
+

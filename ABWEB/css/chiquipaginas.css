@@ -1,0 +1,85 @@
+/* css para la pagina de las otras tiendas */
+
+main {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    margin-top: 10px;
+}
+
+.articuloGeneral {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+    padding: 10px; 
+    border: 3px solid #8A2BE2;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.imagen {
+    flex: 1;
+    margin-right: 20px; 
+    position: relative
+}
+.imagen iframe {
+    width: 100%;
+    height: 300px;
+    border:none;
+    margin-bottom: 10px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.texto {
+    flex: 2;
+}
+
+.link-producto {
+    display: inline-block;
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    background-color: #8A2BE2; 
+    color: white; 
+    text-decoration: none; 
+    text-align: center; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease; 
+    position:absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+}
+
+.link-producto:hover {
+    background-color: #7B68EE; 
+}
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas, como tablets y móviles */
+    .articuloGeneral {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    .texto {
+        text-align: center;
+    }
+
+    .link-producto {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+

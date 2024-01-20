@@ -1,0 +1,14 @@
+/* Estilos para el contenedor principal */
+.contactos {
+    text-align: center; 
+}
+
+.contactos h2 {
+    text-align: left; 
+    margin: 0; 
+    padding: 10px; 
+}
+
+.contactos p {
+    margin: 10px 0; 
+}
