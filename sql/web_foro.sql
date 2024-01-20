@@ -33,7 +33,7 @@ CREATE TABLE `foro` (
   KEY `nombres_foro_usuario_idx` (`nombre`),
   KEY `codigo_juego` (`codigo_juego`),
   CONSTRAINT `foro_ibfk_1` FOREIGN KEY (`codigo_juego`) REFERENCES `productos` (`codigo_productos`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `foro` (
 
 LOCK TABLES `foro` WRITE;
 /*!40000 ALTER TABLE `foro` DISABLE KEYS */;
-INSERT INTO `foro` VALUES (15,'MAMI',' esta muy guapo el calaveras y huesos ese de los piratas seguro que hacen guarradas 2',NULL),(16,'PETER','   me gustan los piratas 5',NULL),(19,'PETER','cosas de esas',NULL),(20,'PETER','ME HA GUSTADO MUCHO LA ULTIMA ENTREGA DEL DIABLO\r\n',NULL),(21,'MARK','DSFSD',NULL);
+INSERT INTO `foro` VALUES (15,'MAMI',' esta muy guapo el calaveras y huesos ese de los piratas',NULL),(16,'PETER','He estado jugando mucho al final fantasy VII que pena no haber vivida aquella epoca.',NULL),(19,'PETER','Me ha molado mucho la saga entera de los wolfeinstein',NULL),(20,'PETER','Ojala pongan pronto los diablo para comprar, que ganas\r ',NULL),(21,'MARK','Quien fuese Cloud',NULL),(22,'MARK','La vida es mejor jugando final fantasy',NULL);
 /*!40000 ALTER TABLE `foro` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-20 13:57:54
+-- Dump completed on 2024-01-20 17:14:10
