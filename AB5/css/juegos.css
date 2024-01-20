@@ -1,0 +1,41 @@
+/* tabla */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Espaciado entre filas */
+}
+
+table tr {
+    background-color: #ffffff; /* Color de fondo de las filas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra para el efecto de marco */
+}
+
+table th, table td {
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación del texto */
+    border: none; /* Sin bordes para las celdas */
+}
+
+/* Estilos para la cabecera de la tabla */
+table thead th {
+    background-color: #f5f5f5; /* Color de fondo para la cabecera */
+}
+
+
+/* aside */
+
+.tabla_juegos {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 20%;
+    /* Otras propiedades de estilo para el aside */
+}
+
+main {
+    width: 80%;
+    /* Otras propiedades de estilo para el main */
+}
