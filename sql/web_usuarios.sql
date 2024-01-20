@@ -39,7 +39,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'admin@gmail.com','ADMIN','1234'),(2,'prueba2@gmail.com','MARK','1234'),(3,'prueba3@gmail.com','DIEGO','1234'),(5,'prueba4@gmail.com','NIDAS','1234'),(6,'prueba5@gmail.com','MAMI','1234'),(7,'prueba6@gmail.com','MARIA','1234'),(8,'prueba18@gmail.com','BARROCOS','1234'),(9,'prueba22@gmail.com','IñIGO','1234'),(10,'prueba1@gmail.com','PETER','1234'),(11,'prueba60@gmail.com','JAVI','1234');
+INSERT INTO `usuarios` VALUES (1,'admin@gmail.com','ADMIN','1234'),(2,'prueba2@gmail.com','MARK','1234'),(3,'prueba3@gmail.com','DIEGO','1234'),(5,'prueba4@gmail.com','NIDAS','1234'),(6,'prueba5@gmail.com','MAMI','1234'),(7,'prueba6@gmail.com','MARIA','1234'),(8,'prueba7@gmail.com','BARROCOS','1234'),(9,'prueba8@gmail.com','IñIGO','1234'),(10,'prueba1@gmail.com','PETER','1234'),(11,'prueba9@gmail.com','JAVI','1234');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-20 13:57:54
+-- Dump completed on 2024-01-20 17:14:10
