@@ -1,0 +1,132 @@
+/* header */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url('imagenes/logo_virtual_vault.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(232, 190, 232);
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 5em; /* Tamaño relativo */
+    list-style-type: none;
+    background-color: rgb(0,0,0,0.5);
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        padding: 5px 0; /* Espaciado para pantallas muy pequeñas */
+    }
+}
+
+/* footer */
+.site-footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: white; /* Color de texto */
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    gap: 150px; /* Espacio entre la imagen y los enlaces */
+}
+
+.footer-photo {
+    flex: 0 0 auto; 
+}
+
+.footer-photo img {
+    max-width: 500px; /* Ajusta esto según el tamaño de tu foto */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.footer-links {
+    display: flex; /* Organiza los enlaces en fila */
+    flex-direction: column; /* Los apila verticalmente */
+    justify-content: center; /* Centra los enlaces verticalmente */
+    align-items: flex-start; /* Alinea los enlaces al inicio */
+}
+
+.footer-links a {
+    color: white; 
+    text-decoration: none; 
+    margin-bottom: 10px; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subraya enlaces al pasar el ratón */
+}
+
+/* tabla de comentarios */
+
+
+main {
+    width: 100%; /* Ajusta al ancho deseado */
+    margin: auto; /* Centra el main en la página */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los bloques en el eje horizontal */
+    gap: 20px; /* Espacio entre los bloques */
+}
+
+.comentario-bloque {
+    border: 1px solid black; /* Borde de los bloques */
+    width: 100%; /* Ancho de los bloques */
+    padding: 8px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espacio debajo de cada bloque */
+    background-color: #f2f2f2; /* Color de fondo de los bloques */
+}
+
+.comentario-nombre {
+    font-weight: bold; /* Nombre en negrita */
+    margin-bottom: 5px; /* Espacio debajo del nombre */
+}
+
+.comentario-texto {
+    text-align: left; /* Alineación del texto del comentario */
+}
+
+

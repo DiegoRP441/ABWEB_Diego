@@ -1,0 +1,9 @@
+        <?php foreach ($miConsulta as $clave => $valor): ?> 
+            <div class="comentario-bloque">
+                <div class="comentario-nombre"><?=$valor['nombre']; ?></div>
+                <div class="comentario-nombre"><?=$valor['comentario']; ?></div>
+
+            </div>
+            <?php endforeach; ?>
+
+esto es para que se vea como comentarios sueltos
