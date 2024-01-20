@@ -1,0 +1,14 @@
+/* Estilos para el contenedor principal */
+.contactos {
+    text-align: center; /* Centra todo el contenido dentro de .contactos */
+}
+
+.contactos h2 {
+    text-align: left; /* Alinea los títulos a la izquierda */
+    margin: 0; /* Remueve cualquier margen por defecto */
+    padding: 10px; /* Añade un poco de espacio alrededor del título */
+}
+
+.contactos p {
+    margin: 10px 0; /* Añade un margen superior e inferior para separar los párrafos */
+}

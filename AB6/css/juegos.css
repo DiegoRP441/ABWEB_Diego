@@ -1,0 +1,99 @@
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.card button {
+    background-color: #7219c0;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* aside */
+
+.contenido_principal {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 20%;
+    background-color: #5d5b8d; /* Un tono morado para el fondo del aside */
+    color: white; /* Texto en color blanco para mayor contraste */
+    padding: 20px;
+    width: 250px; /* Ajusta el ancho según tu diseño */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados para suavizar la estética */
+}
+
+aside h2 {
+    text-align: center;
+    color: #f8f8f8;
+    margin-bottom: 20px;
+}
+
+#carrito {
+    border: 1px solid #774c9e; /* Borde morado para el div del carrito */
+    padding: 10px;
+    min-height: 150px; /* Ajusta según el contenido */
+    margin-bottom: 10px;
+    background-color: #6c648b; /* Un tono más claro de morado para el interior */
+    overflow-y: auto; /* Para manejar múltiples productos */
+}
+
+#totalCarrito {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #774c9e; /* Un tono de morado */
+    margin-bottom: 20px;
+}
+
+.botones_carro button {
+    background-color: #9a72ac; /* Color morado para botones */
+    color: white; /* Texto en blanco para los botones */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0; /* Margen arriba y abajo para separar de otros elementos */
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados para los botones */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar colores */
+}
+
+.botones_carro button:hover {
+    background-color: #b39ddb; /* Un morado más claro al pasar el ratón */
+}
+
+aside a {
+    display: block;
+    background-color: #774c9e; /* Color de fondo morado para el enlace */
+    color: white; /* Color de texto blanco para el enlace */
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar colores */
+}
+
+aside a:hover {
+    background-color: #b39ddb; /* Un morado más claro al pasar el ratón */
+}
+main{
+    width: 80%;
+}
