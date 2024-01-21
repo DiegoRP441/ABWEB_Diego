@@ -1,7 +1,7 @@
 Estas son las instrucciones para el correcto funcionamiento de la pagina web del ABFINAL
 PRIMERO: 
   los carpetas necesarias para el correcto funcionamiento de la web son las siguientes:
-    ABWEB y SQL. (descargar)
+    ABWEBfinal y SQL. (descargar)
 SEGUNDO:
   Entrar en tu gestor de base de datos y añadir las tres tablas de la base de datos web. (utilizar los scripts dados en la carpeta de SQL)
 TERCERO:
@@ -12,3 +12,4 @@ TERCERO:
     php/nuevo.php (linea 13) 
     juegos.php (linea 14)
     foro.php ( linea 15)
+    paginasSecundarias/comentarios_propios.php (linea 15)
