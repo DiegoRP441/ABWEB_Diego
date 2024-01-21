@@ -1,0 +1,186 @@
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Asegura que los elementos hijos estén centrados horizontalmente */
+    align-items: flex-start; /* Alinea los elementos hijos al principio de la línea de flexión */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 0 20px; /* Espacio en los lados del contenedor */
+}
+
+.card {
+    width: 300px; /* Ajusta según tus necesidades */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 3px solid  #39136a; /* Marco gris claro */
+    border-radius: 10px; /* Bordes redondeados, ajusta según tus preferencias */
+    overflow: hidden; 
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px; /* Ajusta según tus necesidades */
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-hover-content {
+    display: none;
+    padding-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.card:hover .card-hover-content {
+    display: block;
+    opacity: 1;
+}
+/* Estilo del botón Agregar al Carrito */
+button {
+    background-color: #39136a; /* Color verde, cambia según tus preferencias */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(33, 1, 36); /* Un tono más oscuro para el efecto hover */
+}
+
+/* aside */
+
+.contenido_principal {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 20%;
+    background-color: #39136a; /* Un tono morado para el fondo del aside */
+    color: white; /* Texto en color blanco para mayor contraste */
+    padding: 20px;
+    width: 250px; /* Ajusta el ancho según tu diseño */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados para suavizar la estética */
+}
+
+aside h2 {
+    text-align: center;
+    color: #f8f8f8;
+    margin-bottom: 20px;
+}
+
+#carrito {
+    border: 1px solid #000000; /* Borde morado para el div del carrito */
+    padding: 10px;
+    min-height: 150px; /* Ajusta según el contenido */
+    margin-bottom: 10px;
+    background-color: #000000; /* Un tono más claro de morado para el interior */
+    overflow-y: auto; /* Para manejar múltiples productos */
+}
+
+#totalCarrito {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #000000; /* Un tono de morado */
+    margin-bottom: 20px;
+}
+
+.botones_carro button {
+    background-color: #070707; /* Color morado para botones */
+    color: white; /* Texto en blanco para los botones */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0; /* Margen arriba y abajo para separar de otros elementos */
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados para los botones */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar colores */
+}
+
+.botones_carro button:hover {
+    background-color: #39136a; /* Un morado más claro al pasar el ratón */
+}
+
+aside a {
+    display: block;
+    background-color: #000000; /* Color de fondo morado para el enlace */
+    color: white; /* Color de texto blanco para el enlace */
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar colores */
+}
+
+aside a:hover {
+    background-color: #39136a; /* Un morado más claro al pasar el ratón */
+}
+main{
+    width: 100%;
+}
+
+.oculto {
+    display: none;
+}
+#botonCarrito {
+    position: fixed; /* Fijo en la pantalla */
+    top: 10px; /* Espaciado desde la parte superior */
+    right: 10px; /* Espaciado desde la derecha */
+    background-color: #39136a; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra */
+    cursor: pointer; /* Cursor en forma de mano */
+    transition: all 0.3s; /* Transición suave para los efectos */
+}
+
+#botonCarrito:hover {
+    background-color: #000000; /* Color de fondo al pasar el ratón */
+}
+
+.carrito-contenedor{
+    position: fixed;
+    top: 10px; /* Ajusta la posición vertical según sea necesario */
+    right: 10px; /* Ajusta la posición horizontal según sea necesario */
+    z-index: 100; 
+}
+#carritoDeCompras {
+    position: fixed;
+    top: 50px; /* Ajusta según la altura de tu botón */
+    right: 10px; /* Alineado con el botón Carrito */
+    width: 250px; /* Ancho del carrito */
+    z-index: 100;
+}
+
+.mensaje-oculto {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #39136a;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+

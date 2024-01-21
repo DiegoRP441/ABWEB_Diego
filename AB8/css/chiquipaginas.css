@@ -1,0 +1,85 @@
+/* css para la pagina de las otras tiendas */
+
+main {
+    width: 100%;
+    max-width: 1200px; /* Ajusta esto según el ancho máximo deseado */
+    margin: 0 auto; /* Centrar el main en la página */
+    margin-top: 10px;
+}
+
+.articuloGeneral {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espacio entre artículos */
+    padding: 10px; /* Espacio alrededor del contenido de cada artículo */
+    border: 3px solid #8A2BE2;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.imagen {
+    flex: 1;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    position: relative
+}
+.imagen iframe {
+    width: 100%;
+    height: 300px;
+    border:none;
+    margin-bottom: 10px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    display: block; /* Asegura que no haya espacio extra debajo de la imagen */
+}
+
+.texto {
+    flex: 2;
+}
+
+.link-producto {
+    display: inline-block;
+    margin-top: 10px; /* Espacio entre la imagen y el botón del mapa */
+    padding: 10px 20px; /* Tamaño del botón */
+    background-color: #8A2BE2; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none; /* Remover subrayado del texto */
+    text-align: center; /* Centrar texto dentro del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para el botón */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+    position:absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+}
+
+.link-producto:hover {
+    background-color: #7B68EE; /* Color de fondo del botón al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas, como tablets y móviles */
+    .articuloGeneral {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen {
+        margin-right: 0;
+        margin-bottom: 10px; /* Espacio entre la imagen y el texto en pantallas pequeñas */
+    }
+
+    .texto {
+        text-align: center;
+    }
+
+    .link-producto {
+        width: 100%; /* El botón ocupa todo el ancho en pantallas pequeñas */
+        margin-top: 0;
+    }
+}
+
