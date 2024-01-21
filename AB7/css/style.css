@@ -1,0 +1,127 @@
+/* estilo para las tres imagenes principales */
+.image-container {
+    position: relative;
+    text-align: center;
+    background-color:purple; /* Color de fondo del marco */
+    border-radius: 15px; /* Bordes redondeados del marco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de elevación */
+    overflow: hidden; /* Asegura que el borde redondeado se aplique a las imágenes también */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.image-row .image-container {
+    flex-basis: calc(33.333% - 40px);
+    margin: 10px;
+    padding: 10px; /* Agrega espacio alrededor de la imagen */
+    transition: transform 1s ease, box-shadow 1s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+}
+.image-row .image-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(255,0,0,0.5);
+    box-shadow: 0 10px 40px rgba(255,0,0,0.8);
+}
+
+.image-row button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.image-row button:hover {
+    background-color: rgba(39, 1, 54, 0.7); /*color del boton al poner el raton encima*/
+
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-row .image-container {
+        margin-bottom: 20px;
+        flex-basis: auto;
+    }
+}
+
+
+.quienes-somos {
+    padding: 20px;
+    background-color: #f5f5f5; /* Un color de fondo ligero para la sección */
+    margin-top: 20px; /* Espacio antes de la sección */
+}
+
+.quienes-somos h2 {
+    text-align: center; /* Centra el título */
+    color: #333; /* Color oscuro para el título */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.quienes-somos p {
+    color: #666; /* Un color más suave para el texto */
+    line-height: 1.6; 
+    max-width: 800px; 
+    margin: 10px auto; 
+    text-align: justify; 
+}
+
+.site-footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: white; /* Color de texto */
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    gap: 150px; /* Espacio entre la imagen y los enlaces */
+}
+
+.footer-photo {
+    flex: 0 0 auto; 
+}
+
+.footer-photo img {
+    max-width: 500px; /* Ajusta esto según el tamaño de tu foto */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.footer-links {
+    display: flex; /* Organiza los enlaces en fila */
+    flex-direction: column; /* Los apila verticalmente */
+    justify-content: center; /* Centra los enlaces verticalmente */
+    align-items: flex-start; /* Alinea los enlaces al inicio */
+}
+
+.footer-links a {
+    color: white; 
+    text-decoration: none; 
+    margin-bottom: 10px; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subraya enlaces al pasar el ratón */
+}
+
+
+
