@@ -1,0 +1,114 @@
+/* Estilos Generales y Reutilizables */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url('../imagenes/logo_virtual_vault.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(232, 190, 232);
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 5em; 
+    list-style-type: none;
+    background-color: rgb(0,0,0,0.5);
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        padding: 5px 0; /* Espaciado para pantallas muy pequeñas */
+    }
+}
+
+.tituloSelectores {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 50px; /* Altura de la sección */
+    margin-top: 10px;
+}
+
+.tituloSelectores h2 {
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    font-size: 3em;
+}
+
+.site-footer {
+    background-color: #333; 
+    color: white; 
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    gap: 150px;
+}
+
+
+
+.footer-photo img {
+    max-width: 500px; 
+    height: auto; 
+}
+.footer-photo {
+    flex: 0 0 auto; 
+}
+
+.footer-links {
+    display: flex; /* Organiza los enlaces en fila */
+    flex-direction: column; /* Los apila verticalmente */
+    justify-content: center; /* Centra los enlaces verticalmente */
+    align-items: flex-start; /* Alinea los enlaces al inicio */
+}
+
+.footer-links a {
+    color: white; 
+    text-decoration: none; 
+    margin-bottom: 10px; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subraya enlaces al pasar el ratón */
+}
