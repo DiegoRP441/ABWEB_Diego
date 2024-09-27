@@ -3,7 +3,7 @@
 $hostDB = '127.0.0.1';
 $nombreDB = 'web';
 $usuarioDB = 'root';
-$contrasenyaDB = '!Dragonioso2323';
+$contrasenyaDB = '1234';
 $idnombre = isset($_REQUEST['idnombre']) ? $_REQUEST['idnombre'] : null;
 $nombre = isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : null;
 $comentario = isset($_REQUEST['comentario']) ? $_REQUEST['comentario'] : null;

@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $hostDB = '127.0.0.1';
     $nombreDB = 'web';
     $usuarioDB = 'root';
-    $contrasenyaDB = '!Dragonioso2323';
+    $contrasenyaDB = '1234';
 
     // Conecta con la base de datos
     $hostPDO = "mysql:host=$hostDB;dbname=$nombreDB;";

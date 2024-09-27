@@ -11,7 +11,7 @@ if (!isset($_SESSION['usuario_id'])) {
 $hostDB = '127.0.0.1';
 $nombreDB = 'web'; 
 $usuarioDB = 'root';
-$contrasenyaDB = '!Dragonioso2323';
+$contrasenyaDB = '1234';
 // Conecta con base de datos
 $hostPDO = "mysql:host=$hostDB;dbname=$nombreDB;"; 
 $miPDO = new PDO($hostPDO, $usuarioDB, $contrasenyaDB);

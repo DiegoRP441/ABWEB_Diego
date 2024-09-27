@@ -15,6 +15,7 @@ if (!isset($_SESSION['usuario_id'])) {
     <link rel="stylesheet" type="text/css" href="css/headFoot.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
     <header>
         <h1>VirtualVault</h1>
