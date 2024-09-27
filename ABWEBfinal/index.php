@@ -15,7 +15,15 @@ if (!isset($_SESSION['usuario_id'])) {
     <link rel="stylesheet" type="text/css" href="css/headFoot.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FB9R92DT1S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-FB9R92DT1S');
+</script>
 <body>
     <header>
         <h1>VirtualVault</h1>
